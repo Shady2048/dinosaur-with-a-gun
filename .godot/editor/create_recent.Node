@@ -1,0 +1,15 @@
+AudioStreamPlayer2D
+AudioStreamPlayer
+Control
+TextureProgressBar
+AnimatedSprite2D
+RichTextLabel
+Area2D
+CollisionShape2D
+Sprite2D
+Parallax2D
+Timer
+Node2D
+CharacterBody2D
+TileMapLayer
+GPUParticlesCollisionBox3D

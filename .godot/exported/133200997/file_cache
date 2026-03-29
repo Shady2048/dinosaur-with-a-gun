@@ -1,0 +1,13 @@
+res://Game/battery/battery.tscn::65366a40d8d274c3e903b9c3f112ec2d::1774793751::res://.godot/exported/133200997/export-a20486b28eb53db2af75bc83247f474d-battery.scn
+res://Game/Cactus/cactus.tscn::a108142304bf11de09f0b07d865fd954::1774794339::res://.godot/exported/133200997/export-3e85547614dcd4bc526cb247e30d4e72-cactus.scn
+res://Game/Cactus/cactus_spawner.tscn::7e558d3fbd140a76032e9cea37b15950::1774747564::res://.godot/exported/133200997/export-4b54bb4740d9ef821ce84ea89f95d10d-cactus_spawner.scn
+res://Game/Level/level.tscn::dfa03907602038c215f2da7051302d78::1774797159::res://.godot/exported/133200997/export-a6fef7571e488a6cf9745a15eb0fd6a5-level.scn
+res://Game/Menus/Game Over/game_over.tscn::02b9646ff0db091bf64bdff2e253d483::1774796373::res://.godot/exported/133200997/export-f7a437ba30630fed318a20a7106a8ce0-game_over.scn
+res://Game/Menus/Title/title.tscn::0d7568039d84333081bda0d1bc396121::1774796570::res://.godot/exported/133200997/export-7a59e9f8412759c9c83111a34a39b309-title.scn
+res://Game/Player/bullet.tscn::a1ab4759af76b1e12ebfd22bac10f5f9::1774793983::res://.godot/exported/133200997/export-a4cd5c7c2cfff79fee53e780788481e2-bullet.scn
+res://Game/Player/player.tscn::c743fbf480fdee0b1e48ad930127bfa6::1774794071::res://.godot/exported/133200997/export-818ab5d351bb0a4978447b319d62dbcb-player.scn
+res://Game/Pteradactyl/pteradactyl.tscn::8462213cd66a08a6ad08160e32733374::1774793907::res://.godot/exported/133200997/export-23d47eef6ffd619951a675ee57983780-pteradactyl.scn
+res://Game/Pteradactyl/enemy_bullet.tscn::119c64acd8d1d8e87b346bd08ef2edfe::1774793955::res://.godot/exported/133200997/export-b04327f736d6c005d830066688d33c00-enemy_bullet.scn
+res://Game/Pteradactyl/pteradactyl_spawner.tscn::0407acf4b92b2924b15c7263f5dc4559::1774747753::res://.godot/exported/133200997/export-8ad88165e47cd88425e6f9009b4ca77e-pteradactyl_spawner.scn
+res://Game/UI/ui.tscn::60302578cb534b1167509b8af68dc5a1::1774794857::res://.godot/exported/133200997/export-5efcd996b64ec8304ceb513a799d18b9-ui.scn
+res://Game/audio_stream_player.tscn::c53e07e1d7fdf660113e574afad79fa1::1774797199::res://.godot/exported/133200997/export-bedf17cbd1245702c8d2065c2ba70251-audio_stream_player.scn

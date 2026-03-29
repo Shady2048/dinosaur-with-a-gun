@@ -1,0 +1,28 @@
+res://Game/Pteradactyl/pteradactyl.tscn
+res://Game/Pteradactyl/pteradactyl.gd
+res://Game/Level/level.tscn
+res://Game/Player/player.tscn
+res://Game/Level/level.gd
+res://Game/Cactus/cactus.tscn
+res://Game/Cactus/cactus.gd
+res://Game/Pteradactyl/enemy_bullet.tscn
+res://Game/Pteradactyl/enemy_bullet.gd
+res://Game/Global.gd
+res://Game/Player/bullet.tscn
+res://Game/Cactus/cactus_spawner.gd
+res://Game/Pteradactyl/pteradactyl_spawner.tscn
+res://Game/Pteradactyl/pteradactyl_spawner.gd
+res://Game/Cactus/cactus_spawner.tscn
+res://Game/Player/bullet.gd
+res://Game/Level/parallax_2d.gd
+res://Game/Player/player.gd
+res://Game/battery/battery.tscn
+res://Game/battery/battery.gd
+res://Game/UI/ui.tscn
+res://Game/UI/ui.gd
+res://Game/Menus/Game Over/game_over.tscn
+res://Game/Menus/Game Over/game_over.gd
+res://Game/Menus/Title/title.tscn
+res://Game/Menus/Title/title.gd
+res://Game/audio_stream_player.tscn
+res://Game/audio_stream_player.gd
