@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://ccuf8ggisnaev"]
+
+[ext_resource type="Script" uid="uid://b4wilhx7ufq7t" path="res://Game/Menus/Title/title.gd" id="1_ktvbg"]
+[ext_resource type="Texture2D" uid="uid://dd8bop4g6lsnh" path="res://Assets/Graphics/temp/6.png" id="1_vcofp"]
+[ext_resource type="FontFile" uid="uid://7o1iosin5iv7" path="res://Assets/Fonts/GravityBold8.ttf" id="2_ktvbg"]
+[ext_resource type="FontFile" uid="uid://bun8egrcdm2jb" path="res://Assets/Fonts/GravityRegular5.ttf" id="3_b72te"]
+
+[node name="Title" type="Control" unique_id=2099695573]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ktvbg")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=916944273]
+repeat_size = Vector2(1000, 100)
+autoscroll = Vector2(-7, 0)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=383036243]
+position = Vector2(1206, 296)
+scale = Vector2(2, 2)
+texture = ExtResource("1_vcofp")
+
+[node name="Ded" type="RichTextLabel" parent="." unique_id=732779219]
+layout_mode = 0
+offset_left = 85.0
+offset_top = 85.0
+offset_right = 1167.0
+offset_bottom = 433.0
+theme_override_colors/default_color = Color(0.42352942, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("2_ktvbg")
+theme_override_font_sizes/normal_font_size = 128
+text = "Dinosaur With a Gun"
+horizontal_alignment = 1
+
+[node name="Restart" type="RichTextLabel" parent="." unique_id=1768364190]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 579.0
+offset_right = 986.0
+offset_bottom = 648.0
+theme_override_colors/default_color = Color(0.42352942, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("3_b72te")
+theme_override_font_sizes/normal_font_size = 32
+text = "Press any Key to Start"

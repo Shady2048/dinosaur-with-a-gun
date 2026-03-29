@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://c8dn7kd7qwheq"]
+
+[ext_resource type="Script" uid="uid://5jv5rpu8m3u4" path="res://Game/Pteradactyl/pteradactyl.gd" id="1_nwd6w"]
+[ext_resource type="Texture2D" uid="uid://cgi5dvp7v70ax" path="res://Assets/Graphics/pterodacyl.png" id="2_nwd6w"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eww5m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_nwd6w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eww5m"]
+size = Vector2(16, 16)
+
+[node name="Pteradactyl" type="Area2D" unique_id=1759315413]
+collision_layer = 2
+collision_mask = 5
+script = ExtResource("1_nwd6w")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=29083963]
+sprite_frames = SubResource("SpriteFrames_eww5m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1631906025]
+shape = SubResource("RectangleShape2D_eww5m")
+
+[node name="changeHeightTimer" type="Timer" parent="." unique_id=581976467]
+one_shot = true
+
+[node name="bulletTimer" type="Timer" parent="." unique_id=559188255]
+wait_time = 5.0
+one_shot = true
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="changeHeightTimer" to="." method="_on_change_height_timer_timeout"]
+[connection signal="timeout" from="bulletTimer" to="." method="_on_bullet_timer_timeout"]

@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://c155r3i6hd7ve"]
+
+[ext_resource type="Script" uid="uid://bygyqfpdoc2d5" path="res://Game/Player/player.gd" id="1_s3asc"]
+[ext_resource type="Texture2D" uid="uid://c8huibpn50hlm" path="res://Assets/Graphics/Dino.png" id="2_s3asc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_letr6"]
+atlas = ExtResource("2_s3asc")
+region = Rect2(0, 0, 18, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vytja"]
+atlas = ExtResource("2_s3asc")
+region = Rect2(18, 0, 18, 18)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_segth"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_letr6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vytja")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s3asc"]
+size = Vector2(8, 16)
+
+[node name="Player" type="CharacterBody2D" unique_id=22830609]
+position = Vector2(-1, 0)
+collision_layer = 11
+collision_mask = 18
+script = ExtResource("1_s3asc")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=204942545]
+position = Vector2(0, -1)
+scale = Vector2(0.8888889, 1)
+sprite_frames = SubResource("SpriteFrames_segth")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=850300561]
+shape = SubResource("RectangleShape2D_s3asc")
+
+[node name="JBufferTimer" type="Timer" parent="." unique_id=1310915591]
+wait_time = 0.2
+one_shot = true
+
+[connection signal="timeout" from="JBufferTimer" to="." method="_on_j_buffer_timer_timeout"]

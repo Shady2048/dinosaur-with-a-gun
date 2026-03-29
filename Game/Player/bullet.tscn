@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://by5ak27wp5umk"]
+
+[ext_resource type="Script" uid="uid://b82aqikmv6l8d" path="res://Game/Player/bullet.gd" id="1_frrfs"]
+[ext_resource type="Texture2D" uid="uid://dydjx27i3elm4" path="res://Assets/Graphics/red_lazer.png" id="2_frrfs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wyblq"]
+size = Vector2(40, 27)
+
+[node name="Bullet" type="Area2D" unique_id=1212555792]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_frrfs")
+
+[node name="Yellow" type="Sprite2D" parent="." unique_id=194768778]
+position = Vector2(-14, -15)
+scale = Vector2(4, 4)
+texture = ExtResource("2_frrfs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1339045535]
+position = Vector2(0, -6.5)
+shape = SubResource("RectangleShape2D_wyblq")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

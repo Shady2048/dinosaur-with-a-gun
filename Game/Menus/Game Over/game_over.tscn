@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://jgncy27qucyy"]
+
+[ext_resource type="Script" uid="uid://shjy0rhje8m0" path="res://Game/Menus/Game Over/game_over.gd" id="1_efvwm"]
+[ext_resource type="Texture2D" uid="uid://dd8bop4g6lsnh" path="res://Assets/Graphics/temp/6.png" id="3_msmkd"]
+[ext_resource type="FontFile" uid="uid://7o1iosin5iv7" path="res://Assets/Fonts/GravityBold8.ttf" id="4_lf8d1"]
+[ext_resource type="FontFile" uid="uid://bun8egrcdm2jb" path="res://Assets/Fonts/GravityRegular5.ttf" id="5_wcnjd"]
+
+[node name="Game Over" type="Control" unique_id=1134189012]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_efvwm")
+metadata/_edit_vertical_guides_ = [639.0]
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=2074227890]
+repeat_size = Vector2(1000, 100)
+autoscroll = Vector2(-7, 0)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=1643238100]
+position = Vector2(1206, 296)
+scale = Vector2(2, 2)
+texture = ExtResource("3_msmkd")
+
+[node name="Ded" type="RichTextLabel" parent="." unique_id=124729212]
+layout_mode = 0
+offset_left = 325.0
+offset_top = 114.0
+offset_right = 951.0
+offset_bottom = 227.0
+theme_override_fonts/normal_font = ExtResource("4_lf8d1")
+theme_override_font_sizes/normal_font_size = 64
+text = "Game Over!"
+
+[node name="Score" type="RichTextLabel" parent="." unique_id=721926292]
+layout_mode = 0
+offset_left = 395.0
+offset_top = 259.0
+offset_right = 884.0
+offset_bottom = 328.0
+theme_override_fonts/normal_font = ExtResource("5_wcnjd")
+theme_override_font_sizes/normal_font_size = 32
+text = "Score: "
+horizontal_alignment = 1
+
+[node name="Distance" type="RichTextLabel" parent="." unique_id=1677367192]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 317.0
+offset_right = 902.0
+offset_bottom = 386.0
+theme_override_fonts/normal_font = ExtResource("5_wcnjd")
+theme_override_font_sizes/normal_font_size = 32
+text = "Distance: "
+horizontal_alignment = 1
+
+[node name="Total Score" type="RichTextLabel" parent="." unique_id=1071419675]
+layout_mode = 0
+offset_left = 348.0
+offset_top = 370.0
+offset_right = 931.0
+offset_bottom = 439.0
+theme_override_fonts/normal_font = ExtResource("5_wcnjd")
+theme_override_font_sizes/normal_font_size = 32
+text = "Total Score: "
+horizontal_alignment = 1
+
+[node name="Restart" type="RichTextLabel" parent="." unique_id=434630463]
+layout_mode = 0
+offset_left = 308.0
+offset_top = 625.0
+offset_right = 961.0
+offset_bottom = 694.0
+theme_override_fonts/normal_font = ExtResource("5_wcnjd")
+theme_override_font_sizes/normal_font_size = 32
+text = "Press R to restart"

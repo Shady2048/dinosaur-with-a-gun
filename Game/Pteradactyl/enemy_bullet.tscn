@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://w7is0my6kvll"]
+
+[ext_resource type="Script" uid="uid://bx8d1lsvrta41" path="res://Game/Pteradactyl/enemy_bullet.gd" id="1_erovc"]
+[ext_resource type="Texture2D" uid="uid://c2mokkcul3hsi" path="res://Assets/Graphics/blue_lazer.png" id="2_erovc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_erovc"]
+size = Vector2(40, 33)
+
+[node name="EnemyBullet" type="Area2D" unique_id=1384691402]
+collision_layer = 2
+script = ExtResource("1_erovc")
+
+[node name="Yellow" type="Sprite2D" parent="." unique_id=1135059877]
+position = Vector2(14, -9)
+scale = Vector2(4, 4)
+texture = ExtResource("2_erovc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1591193349]
+position = Vector2(0, 9.5)
+shape = SubResource("RectangleShape2D_erovc")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

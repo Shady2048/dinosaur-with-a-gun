@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://i1mplaaf0ubo"]
+
+[ext_resource type="Script" uid="uid://ch1wny32mu0v1" path="res://Game/Cactus/cactus_spawner.gd" id="1_gsw0n"]
+[ext_resource type="Texture2D" uid="uid://dukytmv52f3h5" path="res://Assets/Graphics/Colored Boxes/Teal.png" id="1_rrlea"]
+
+[node name="Cactus Spawner" type="Node2D" unique_id=2112208015]
+script = ExtResource("1_gsw0n")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=767962930]
+
+[node name="Teal" type="Sprite2D" parent="." unique_id=404932772]
+texture = ExtResource("1_rrlea")
+
+[node name="Try_Spawn_Timer" type="Timer" parent="." unique_id=1829002014]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="Try_Spawn_Timer" to="." method="_on_try_spawn_timer_timeout"]

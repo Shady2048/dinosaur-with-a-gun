@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bbtixb8fduwv"]
+
+[ext_resource type="Texture2D" uid="uid://ddotbqf5nfee3" path="res://Assets/Graphics/Colored Boxes/Brown.png" id="1_1xxbh"]
+[ext_resource type="Script" uid="uid://bijd6k7nl20aw" path="res://Game/Pteradactyl/pteradactyl_spawner.gd" id="1_e1jlx"]
+
+[node name="pteradactyl_spawner" type="Node2D" unique_id=1627578003]
+script = ExtResource("1_e1jlx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=286548463]
+texture = ExtResource("1_1xxbh")
+
+[node name="try_Spawn_Timer" type="Timer" parent="." unique_id=567803644]
+
+[connection signal="timeout" from="try_Spawn_Timer" to="." method="_on_try_spawn_timer_timeout"]

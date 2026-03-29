@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://5hgcj3ob5few"]
+
+[ext_resource type="Script" uid="uid://cwk7xltthai0q" path="res://Game/UI/ui.gd" id="1_535k5"]
+[ext_resource type="FontFile" uid="uid://7o1iosin5iv7" path="res://Assets/Fonts/GravityBold8.ttf" id="2_j1y60"]
+[ext_resource type="Texture2D" uid="uid://bapexyu71brn8" path="res://Assets/Graphics/battery_bar_empty.png" id="3_vpviu"]
+[ext_resource type="Texture2D" uid="uid://bswx32ks4wwtl" path="res://Assets/Graphics/battery_bar.png" id="4_0ruph"]
+
+[node name="UI" type="Control" unique_id=1589592478]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_535k5")
+
+[node name="Distance" type="RichTextLabel" parent="." unique_id=1882352862]
+layout_mode = 0
+offset_left = 904.0
+offset_top = 15.0
+offset_right = 1347.0
+offset_bottom = 54.0
+theme_override_fonts/normal_font = ExtResource("2_j1y60")
+theme_override_font_sizes/normal_font_size = 32
+text = "Distance: "
+
+[node name="Score" type="RichTextLabel" parent="." unique_id=1549016621]
+layout_mode = 0
+offset_left = 476.0
+offset_top = 15.0
+offset_right = 892.0
+offset_bottom = 56.0
+theme_override_fonts/normal_font = ExtResource("2_j1y60")
+theme_override_font_sizes/normal_font_size = 32
+text = "Score: "
+
+[node name="Ammo" type="RichTextLabel" parent="." unique_id=511600984]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 17.0
+offset_right = 166.0
+offset_bottom = 43.0
+text = "Ammo: "
+
+[node name="Ammo Bar" type="TextureProgressBar" parent="." unique_id=519053653]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 18.0
+offset_right = 106.0
+offset_bottom = 58.0
+scale = Vector2(4, 4)
+max_value = 15.0
+value = 15.0
+texture_under = ExtResource("3_vpviu")
+texture_progress = ExtResource("4_0ruph")
